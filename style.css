@@ -10,7 +10,7 @@
 }
 .card{
     border: 2px solid black;
-    height: 400px;
+    height: 450px;
     margin: 15px;
 }
 .card-body{
@@ -34,4 +34,10 @@
     background-color: black;
     color: white;
     text-align: center;
+}
+#details{
+    border: 2px solid;
+    color: black;
+    /* height: 100px;
+    width: 300px; */
 }
