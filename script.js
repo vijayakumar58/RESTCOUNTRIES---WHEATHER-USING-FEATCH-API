@@ -16,7 +16,6 @@ async function getweatherData(){
       countrieData.map((ele)=>{
          var country=ele.name.common;
          divrow.innerHTML+=`<div class="col-lg-4">
-         <div class="col-sm-12"></div>
          <div class="card">
            <div class="card-header" id="countryName"><b>${ele.name.common}</b></div>
            <div class="card-body">
