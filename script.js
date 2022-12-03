@@ -23,7 +23,7 @@ async function getweatherData(){
                    <div class="text"><b>Capital :${ele.capital}</b></div>
                    <div class="text"><b>Region :${ele.region}</b></div>
                    <div class="text"><b>Country Code :${ele.cca2}</b></div>
-              <div class="wheatherDetails" style="display:none" id=details${index}></div>     
+              <div class="wheatherDetails" id="details${index}"></div>     
            </div>
            <button  type="button" class="btn btn-primary" value="${ele.name.common}" onclick="weatherData('${country}',${index})">Click for weather</button>
          </div>
@@ -39,7 +39,7 @@ async function weatherData(Country,index){
    let result=await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${Country}&appid=87fe926676d0f2ab9b9cda9b1587fb87`)
    let res=await result.json();
    console.log(res);
-  details.style.display="block";
+//   details.style.display="block";
   details.innerHTML=`<span><b>Temperature : ${res.main.temp}</b></span>,<br>
                                                 <span><b>Pressure : ${res.main.pressure}</b></span>,<br>
                                                 <span><b>Humidity : ${res.main.humidity}</b></span>,<br>

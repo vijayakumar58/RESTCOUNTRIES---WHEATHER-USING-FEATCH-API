@@ -35,8 +35,9 @@
     color: white;
     text-align: center;
 }
-#details{
+.wheatherDetails{
     text-align: center;
     border: 2px solid;
     color: black;
+    margin: 0px 15px;
 }
