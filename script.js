@@ -1,3 +1,9 @@
+const header = document.createElement("div");
+const navbar = document.createElement("nav");
+navbar.setAttribute('class', 'header');
+navbar.innerHTML = "<h1>Restcountry's Current Weather Report</h1>"
+header.append(navbar)
+
 const divcontainer=document.createElement("div");
  divcontainer.setAttribute("class","container");
 
@@ -5,7 +11,7 @@ const divcontainer=document.createElement("div");
  divrow.setAttribute("class","row");
 
  divcontainer.append(divrow);
- document.body.append(divcontainer);
+ document.body.append(header,divcontainer);
 
 
 async function getweatherData(){
